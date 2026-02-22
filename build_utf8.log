@@ -1,0 +1,178 @@
+﻿
+> batela-foods@0.1.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+node.exe : request to 
+https://fonts.googleap
+is.com/css2?family=Mon
+tserrat:wght@400;500;6
+00;700;800;900&display
+=swap failed, reason: 
+Au caractère Ligne:1 
+: 1
++ & "C:\Program Files\
+nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (request to   
+  http...ailed, re    
+ason: :String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+
+Retrying 1/3...
+request to https://fon
+ts.googleapis.com/css2
+?family=Open+Sans:wght
+@400;500;600;700&displ
+ay=swap failed, 
+reason: 
+
+Retrying 1/3...
+request to https://fon
+ts.googleapis.com/css2
+?family=Montserrat:wgh
+t@400;500;600;700;800;
+900&display=swap 
+failed, reason: 
+
+Retrying 2/3...
+request to https://fon
+ts.googleapis.com/css2
+?family=Open+Sans:wght
+@400;500;600;700&displ
+ay=swap failed, 
+reason: 
+
+Retrying 2/3...
+request to https://fon
+ts.googleapis.com/css2
+?family=Montserrat:wgh
+t@400;500;600;700;800;
+900&display=swap 
+failed, reason: 
+
+Retrying 3/3...
+request to https://fon
+ts.googleapis.com/css2
+?family=Open+Sans:wght
+@400;500;600;700&displ
+ay=swap failed, 
+reason: 
+
+Retrying 3/3...
+FetchError: request 
+to https://fonts.googl
+eapis.com/css2?family=
+Montserrat:wght@400;50
+0;600;700;800;900&disp
+lay=swap failed, 
+reason: 
+    at ClientRequest.<
+anonymous> 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\node-fetch\index.j
+s:1:66160)
+    at 
+ClientRequest.emit 
+(node:events:508:28)
+    at emitErrorEvent 
+(node:_http_client:108
+:11)
+    at TLSSocket.socke
+tErrorListener (node:_
+http_client:575:5)
+    at TLSSocket.emit 
+(node:events:508:28)
+    at emitErrorNT (no
+de:internal/streams/de
+stroy:170:8)
+    at 
+emitErrorCloseNT (node
+:internal/streams/dest
+roy:129:3)
+    at process.process
+TicksAndRejections (no
+de:internal/process/ta
+sk_queues:89:21) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT'
+}
+FetchError: request 
+to https://fonts.googl
+eapis.com/css2?family=
+Open+Sans:wght@400;500
+;600;700&display=swap 
+failed, reason: 
+    at ClientRequest.<
+anonymous> 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\node-fetch\index.j
+s:1:66160)
+    at 
+ClientRequest.emit 
+(node:events:508:28)
+    at emitErrorEvent 
+(node:_http_client:108
+:11)
+    at TLSSocket.socke
+tErrorListener (node:_
+http_client:575:5)
+    at TLSSocket.emit 
+(node:events:508:28)
+    at emitErrorNT (no
+de:internal/streams/de
+stroy:170:8)
+    at 
+emitErrorCloseNT (node
+:internal/streams/dest
+roy:129:3)
+    at process.process
+TicksAndRejections (no
+de:internal/process/ta
+sk_queues:89:21) {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT'
+}
+Failed to compile.
+
+app\[locale]\layout.ts
+x
+`next/font` error:
+Failed to fetch 
+`Montserrat` from 
+Google Fonts.
+
+app\[locale]\layout.ts
+x
+`next/font` error:
+Failed to fetch `Open 
+Sans` from Google 
+Fonts.
+
+
+> Build failed 
+because of webpack 
+errors

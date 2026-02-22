@@ -1,0 +1,151 @@
+{
+    "nav": {
+        "home": "ACCUEIL",
+        "shop": "BOUTIQUE",
+        "products": "PRODUITS",
+        "wholesale": "EN GROS",
+        "blog": "BLOG",
+        "contact": "CONTACT",
+        "login": "CONNEXION",
+        "cart": "PANIER",
+        "settings": "RÉGLAGES",
+        "cta_order": "COMMANDER MAINTENANT"
+    },
+    "hero": {
+        "tagline": "DÉCOUVREZ LES\nSAVEURS DU CAMEROUN",
+        "subtitle": "Batela Foods vous apporte le meilleur des produits locaux, frais et authentiques, directement à votre porte à Douala et au-delà.",
+        "cta_order": "COMMANDER MAINTENANT",
+        "cta_catalogue": "VOIR LE CATALOGUE"
+    },
+    "favorites": {
+        "title": "NOS BEST-SELLERS",
+        "subtitle": "Les produits préférés de la communauté Batela, sélectionnés pour leur qualité premium.",
+        "view_all": "TOUT VOIR",
+        "loading": "Chargement des pépites...",
+        "empty": "Aucun produit trouvé pour le moment"
+    },
+    "delivery": {
+        "title": "EXPÉDITION RAPIDE & FRAÎCHE",
+        "douala_title": "DOUALA",
+        "douala_time": "Livraison en 2h",
+        "cities_title": "AUTRES VILLES",
+        "cities_time": "Livraison en 24h",
+        "note": "*Les délais peuvent varier selon la disponibilité des stocks et votre localisation exacte."
+    },
+    "wholesale": {
+        "badge": "PARTENARIAT",
+        "title": "VENTE EN GROS & RESTAURATION",
+        "subtitle": "Vous êtes un restaurant ou un revendeur ? Profitez de nos tarifs préférentiels sur les volumes.",
+        "cta": "DEMANDER UN DEVIS",
+        "feature1": "Approvisionnement régulier",
+        "feature2": "Qualité premium garantie",
+        "feature3": "Tarification dégressive"
+    },
+    "product_card": {
+        "price_unit": "FCFA",
+        "view_details": "Détails"
+    },
+    "product_detail": {
+        "back": "Retour à la boutique",
+        "category": "Catégorie",
+        "in_stock": "En stock",
+        "add_to_cart": "AJOUTER AU PANIER",
+        "ingredients": "Ingrédients",
+        "storage": "Conservation",
+        "quantity": "Quantité",
+        "related": "PRODUITS SIMILAIRES",
+        "price_unit": "FCFA"
+    },
+    "contact": {
+        "title": "CONTACTEZ-NOUS",
+        "subtitle": "Une question ? Une commande spéciale ? Notre équipe est à votre écoute.",
+        "form_name": "Votre Nom",
+        "form_name_placeholder": "Ex: Jean Dupont",
+        "form_email": "Email ou Téléphone",
+        "form_email_placeholder": "Ex: jean@email.com ou 6XX XXX XXX",
+        "form_subject": "Sujet",
+        "form_subject_placeholder": "Ex: Demande de prix de gros",
+        "form_message": "Message",
+        "form_message_placeholder": "Dites-nous tout...",
+        "form_submit": "ENVOYER LE MESSAGE",
+        "form_sending": "ENVOI EN COURS...",
+        "form_success": "Merci ! Votre message a bien été envoyé. Nous vous répondrons très bientôt.",
+        "form_error": "Oups ! Une erreur est survenue lors de l'envoi. Veuillez réessayer plus tard.",
+        "info_title": "Informations de contact",
+        "phone": "Téléphone",
+        "email": "Email",
+        "address": "Localisation",
+        "address_value": "Douala, Bonamoussadi",
+        "hours": "Horaires",
+        "hours_value": "Lun-Sam: 08:00 - 18:00",
+        "map_title": "Où nous trouver"
+    },
+    "footer": {
+        "about_title": "BATELA FOODS",
+        "about_text": "Le meilleur du terroir camerounais, sélectionné avec soin pour une alimentation saine et authentique.",
+        "nav_title": "NAVIGATION",
+        "contact_title": "NOUS SUIVRE",
+        "rights": "© 2024 Batela Foods. Tous droits réservés.",
+        "made_in": "Fièrement fabriqué au Cameroun 🇨🇲"
+    },
+    "validation": {
+        "name_required": "Le nom est obligatoire",
+        "contact_required": "Le contact est obligatoire",
+        "subject_required": "Le sujet est obligatoire",
+        "message_min": "Le message doit faire au moins 10 caractères"
+    },
+    "empty_state": {
+        "products": "Aucun produit trouvé",
+        "products_sub": "Revenez bientôt, de nouveaux produits arrivent !"
+    },
+    "cart": {
+        "title": "MON PANIER",
+        "empty": "Votre panier est vide",
+        "empty_subtitle": "Découvrez nos saveurs authentiques pour commencer.",
+        "shop_now": "VOIR LE CATALOGUE",
+        "checkout": "COMMANDER MAINTENANT",
+        "quantity": "Quantité",
+        "total": "Total",
+        "remove": "Supprimer"
+    },
+    "theme": {
+        "toggle": "Changer le thème",
+        "dark": "Mode sombre",
+        "light": "Mode clair"
+    },
+    "language": {
+        "toggle": "Changer la langue",
+        "fr": "Français",
+        "en": "Anglais"
+    },
+    "login": {
+        "title": "Connexion",
+        "subtitle": "Accédez à votre espace client",
+        "email_label": "Email",
+        "password_label": "Mot de passe",
+        "forgot_password": "Mot de passe oublié ?",
+        "remember_me": "Se souvenir de moi",
+        "btn_login": "SE CONNECTER",
+        "no_account": "Pas encore de compte ?",
+        "register_link": "S'inscrire"
+    },
+    "register": {
+        "title": "Inscription",
+        "subtitle": "Créez votre compte Batela Foods",
+        "name_label": "Nom Complet",
+        "name_placeholder": "Ex: Jean Dupont",
+        "email_label": "Email",
+        "password_label": "Mot de passe",
+        "btn_register": "CRÉER UN COMPTE",
+        "has_account": "Vous avez déjà un compte ?",
+        "login_link": "Se connecter"
+    },
+    "blog": {
+        "title": "Actualités & Blog",
+        "subtitle": "Restez informé des nouveautés Batela Foods, de nos recettes, et de l'agriculture camerounaise.",
+        "back_home": "RETOUR À L'ACCUEIL",
+        "read_more": "Lire la suite",
+        "empty": "Aucun article pour le moment",
+        "empty_subtitle": "Revenez bientôt pour découvrir nos actualités !"
+    }
+}

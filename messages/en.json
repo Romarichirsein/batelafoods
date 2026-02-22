@@ -1,0 +1,151 @@
+{
+    "nav": {
+        "home": "HOME",
+        "shop": "SHOP",
+        "products": "PRODUCTS",
+        "wholesale": "WHOLESALE",
+        "blog": "BLOG",
+        "contact": "CONTACT",
+        "login": "LOGIN",
+        "cart": "CART",
+        "settings": "SETTINGS",
+        "cta_order": "ORDER NOW"
+    },
+    "hero": {
+        "tagline": "DISCOVER THE\nFLAVORS OF CAMEROON",
+        "subtitle": "Batela Foods brings you the best of local, fresh and authentic products, directly to your doorstep in Douala and beyond.",
+        "cta_order": "ORDER NOW",
+        "cta_catalogue": "VIEW CATALOGUE"
+    },
+    "favorites": {
+        "title": "OUR BEST-SELLERS",
+        "subtitle": "The Batela community's favorite products, selected for their premium quality.",
+        "view_all": "VIEW ALL",
+        "loading": "Loading gems...",
+        "empty": "No products found for now"
+    },
+    "delivery": {
+        "title": "FAST & FRESH SHIPPING",
+        "douala_title": "DOUALA",
+        "douala_time": "2h Delivery",
+        "cities_title": "OTHER CITIES",
+        "cities_time": "24h Delivery",
+        "note": "*Times may vary depending on stock availability and your exact location."
+    },
+    "wholesale": {
+        "badge": "PARTNERSHIP",
+        "title": "WHOLESALE & CATERING",
+        "subtitle": "Are you a restaurant or a reseller? Enjoy our preferred rates on volumes.",
+        "cta": "REQUEST A QUOTE",
+        "feature1": "Regular supply",
+        "feature2": "Guaranteed premium quality",
+        "feature3": "Volume-based pricing"
+    },
+    "product_card": {
+        "price_unit": "FCFA",
+        "view_details": "Details"
+    },
+    "product_detail": {
+        "back": "Back to shop",
+        "category": "Category",
+        "in_stock": "In Stock",
+        "add_to_cart": "ADD TO CART",
+        "ingredients": "Ingredients",
+        "storage": "Storage",
+        "quantity": "Quantity",
+        "related": "SIMILAR PRODUCTS",
+        "price_unit": "FCFA"
+    },
+    "contact": {
+        "title": "CONTACT US",
+        "subtitle": "A question? A special order? Our team is at your service.",
+        "form_name": "Your Name",
+        "form_name_placeholder": "Ex: John Doe",
+        "form_email": "Email or Phone",
+        "form_email_placeholder": "Ex: john@email.com or 6XX XXX XXX",
+        "form_subject": "Subject",
+        "form_subject_placeholder": "Ex: Wholesale pricing request",
+        "form_message": "Message",
+        "form_message_placeholder": "Tell us everything...",
+        "form_submit": "SEND MESSAGE",
+        "form_sending": "SENDING...",
+        "form_success": "Thank you! Your message has been sent. We will get back to you soon.",
+        "form_error": "Oops! An error occurred while sending. Please try again later.",
+        "info_title": "Contact Information",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Location",
+        "address_value": "Douala, Cameroon",
+        "hours": "Hours",
+        "hours_value": "Mon-Sat: 08:00 - 18:00",
+        "map_title": "Where to find us"
+    },
+    "footer": {
+        "about_title": "BATELA FOODS",
+        "about_text": "The best of Cameroonian terroir, carefully selected for a healthy and authentic diet.",
+        "nav_title": "NAVIGATION",
+        "contact_title": "FOLLOW US",
+        "rights": "© 2024 Batela Foods. All rights reserved.",
+        "made_in": "Proudly made in Cameroon 🇨🇲"
+    },
+    "validation": {
+        "name_required": "Name is required",
+        "contact_required": "Contact is required",
+        "subject_required": "Subject is required",
+        "message_min": "Message must be at least 10 characters"
+    },
+    "empty_state": {
+        "products": "No products found",
+        "products_sub": "Check back soon, new products are coming!"
+    },
+    "cart": {
+        "title": "MY CART",
+        "empty": "Your cart is empty",
+        "empty_subtitle": "Discover our authentic flavors to get started.",
+        "shop_now": "SHOP NOW",
+        "checkout": "CHECKOUT NOW",
+        "quantity": "Quantity",
+        "total": "Total",
+        "remove": "Remove"
+    },
+    "theme": {
+        "toggle": "Change theme",
+        "dark": "Dark mode",
+        "light": "Light mode"
+    },
+    "language": {
+        "toggle": "Change language",
+        "fr": "French",
+        "en": "English"
+    },
+    "login": {
+        "title": "Login",
+        "subtitle": "Access your customer account",
+        "email_label": "Email",
+        "password_label": "Password",
+        "forgot_password": "Forgot password?",
+        "remember_me": "Remember me",
+        "btn_login": "LOG IN",
+        "no_account": "Don't have an account yet?",
+        "register_link": "Sign up"
+    },
+    "register": {
+        "title": "Registration",
+        "subtitle": "Create your Batela Foods account",
+        "name_label": "Full Name",
+        "name_placeholder": "John Doe",
+        "email_label": "Email",
+        "password_label": "Password",
+        "btn_register": "CREATE ACCOUNT",
+        "has_account": "Already have an account?",
+        "login_link": "Log in"
+    },
+    "blog": {
+        "title": "News & Blog",
+        "subtitle": "Stay updated with Batela Foods, new recipes, and Cameroonian agriculture.",
+        "back_home": "BACK TO HOME",
+        "read_more": "Read more",
+        "empty": "No articles yet",
+        "empty_subtitle": "Check back soon to discover our latest news!"
+    }
+}

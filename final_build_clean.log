@@ -1,0 +1,100 @@
+﻿
+> batela-foods@0.1.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+node.exe :  ÔÜá Using 
+edge runtime on a 
+page currently 
+disables static 
+generation for that 
+page
+Au caractère Ligne:1 
+: 1
++ & "C:\Program Files\
+nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ( ÔÜá Using   
+  edge...n for tha    
+t page:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+
+> Build error occurred
+Error: Page "/[locale]
+/blog/[slug]" is 
+missing "generateStati
+cParams()" so it 
+cannot be used with 
+"output: export" 
+config.
+    at 
+C:\Users\COMPUTER STOR
+ES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\build
+\index.js:1297:59
+    at process.process
+TicksAndRejections (no
+de:internal/process/ta
+sk_queues:103:5)
+    at async 
+Span.traceAsyncFn 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\trace
+\trace.js:154:20)
+    at async 
+Promise.all (index 5)
+    at async 
+C:\Users\COMPUTER STOR
+ES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\build
+\index.js:1175:17
+    at async 
+Span.traceAsyncFn 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\trace
+\trace.js:154:20)
+    at async 
+C:\Users\COMPUTER STOR
+ES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\build
+\index.js:1098:124
+    at async 
+Span.traceAsyncFn 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\trace
+\trace.js:154:20)
+    at async build 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\build
+\index.js:368:9)
+
+

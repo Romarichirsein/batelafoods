@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+    --primary: 356 87% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 153 100% 21%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 94%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 356 87% 40%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 97%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 97%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 97%;
+    --primary: 356 87% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 153 100% 21%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 97%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 356 87% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-open-sans), sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+}
+
+@layer components {
+  .btn-neon-red {
+    @apply bg-neon-red text-white font-semibold px-6 py-3 rounded-full hover:bg-neon-red-dark transition-all duration-300 hover:shadow-neon-red hover:-translate-y-1 active:scale-95 focus:outline-none focus:ring-2 focus:ring-neon-red focus:ring-offset-2;
+  }
+
+  .btn-neon-green {
+    @apply border-2 border-neon-green text-neon-green font-semibold px-6 py-3 rounded-full hover:bg-neon-green hover:text-white transition-all duration-300 hover:shadow-neon-green hover:-translate-y-1 active:scale-95 focus:outline-none focus:ring-2 focus:ring-neon-green focus:ring-offset-2;
+  }
+
+  .card-neon {
+    @apply rounded-xl border border-border bg-card transition-all duration-300 hover:border-neon-red/50 hover:shadow-neon-red-sm hover:-translate-y-2;
+  }
+
+  .neon-text-red {
+    color: #c1272d;
+    text-shadow: 0 0 10px rgba(193, 39, 45, 0.5);
+  }
+
+  .neon-text-green {
+    color: #009245;
+    text-shadow: 0 0 10px rgba(0, 146, 69, 0.4);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1272d;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9e1f24;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Neon grid background for hero */
+.neon-grid-bg {
+  background-image:
+    linear-gradient(rgba(191, 14, 21, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(191, 14, 21, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
