@@ -1,6 +1,9 @@
 import { TrendingUp, ShoppingCart, Users, Package, ArrowUp, ArrowDown, Clock, CheckCircle2, Truck, XCircle, Eye } from "lucide-react";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export const dynamic = "force-static";
+export function generateStaticParams() {
+    return [{ locale: 'fr' }, { locale: 'en' }];
+}
 
 const kpis = [
     { label: "Revenus du mois", value: "1 248 500 FCFA", change: "+12.4%", up: true, icon: TrendingUp },
@@ -33,7 +36,8 @@ const topProducts = [
     { emoji: "🌿", name: "Nkui Premium", sales: 42, revenue: "294 000 FCFA" },
 ];
 
-export default function AdminDashboard() {
+export default function AdminDashboard({ params: { locale } }: { params: { locale: string } }) {
+    unstable_setRequestLocale(locale);
     const barData = [40, 65, 50, 80, 60, 90, 75, 85, 70, 95, 88, 100];
     const months = ["Mar", "Avr", "Mai", "Jun", "Jul", "Aoû", "Sep", "Oct", "Nov", "Déc", "Jan", "Fév"];
 
