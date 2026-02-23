@@ -78,8 +78,9 @@ export default async function LocaleLayout({
                 <NextIntlClientProvider messages={messages} locale={locale}>
                     <ThemeProvider
                         attribute="class"
-                        defaultTheme="dark"
-                        enableSystem
+                        defaultTheme="light"
+                        forcedTheme="light"
+                        enableSystem={false}
                         disableTransitionOnChange
                     >
                         <div className="flex flex-col min-h-screen">
@@ -89,7 +90,7 @@ export default async function LocaleLayout({
                             </div>
                             <Footer />
                         </div>
-                        <Toaster position="bottom-right" richColors theme="dark" />
+                        <Toaster position="bottom-right" richColors theme="light" />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>

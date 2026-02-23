@@ -147,5 +147,11 @@
         "read_more": "Read more",
         "empty": "No articles yet",
         "empty_subtitle": "Check back soon to discover our latest news!"
+    },
+    "about": {
+        "title": "OUR STORY",
+        "subtitle": "Batela Foods embodies local flavors, universal quality, nature, and professionalism.",
+        "promoter": "A Word from the Promoter",
+        "message": "Welcome to Batela Foods. Since our inception, our mission has been to elevate local Cameroonian flavors while offering universal quality. We guarantee natural products, sources of vitality, prepared with rigorous professionalism. Discover our passion for excellence and freshness."
     }
 }

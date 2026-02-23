@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { getFeaturedProducts } from "@/lib/sanity/queries";
+import { getAllProducts } from "@/lib/sanity/queries";
 import { ProductCard } from "./ProductCard";
 import Link from "next/link";
 import { ArrowRight, Package } from "lucide-react";
@@ -9,7 +9,7 @@ export async function ProductGrid({ locale }: { locale: string }) {
 
     let products: any[] = [];
     try {
-        products = await getFeaturedProducts();
+        products = await getAllProducts();
     } catch {
         products = [];
     }

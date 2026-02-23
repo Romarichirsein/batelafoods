@@ -18,10 +18,10 @@ const config: Config = {
                 sans: ["var(--font-open-sans)", ...fontFamily.sans],
             },
             colors: {
-                "neon-red": "#c1272d",
-                "neon-red-dark": "#9e1f24",
-                "neon-green": "#009245",
-                "neon-green-dark": "#006837",
+                "neon-red": "#bf0e15",
+                "neon-red-dark": "#990B11",
+                "neon-green": "#006b37",
+                "neon-green-dark": "#004B26",
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
@@ -58,10 +58,6 @@ const config: Config = {
                 sm: "calc(var(--radius) - 4px)",
             },
             boxShadow: {
-                "neon-red": "0 0 20px rgba(193, 39, 45, 0.5), 0 0 40px rgba(193, 39, 45, 0.2)",
-                "neon-red-sm": "0 0 10px rgba(193, 39, 45, 0.4)",
-                "neon-green": "0 0 20px rgba(0, 146, 69, 0.5), 0 0 40px rgba(0, 146, 69, 0.2)",
-                "neon-green-sm": "0 0 10px rgba(0, 146, 69, 0.4)",
             },
             keyframes: {
                 "accordion-down": {
@@ -72,14 +68,7 @@ const config: Config = {
                     from: { height: "var(--radix-accordion-content-height)" },
                     to: { height: "0" },
                 },
-                "neon-pulse-red": {
-                    "0%, 100%": { boxShadow: "0 0 15px rgba(193,39,45,0.4)" },
-                    "50%": { boxShadow: "0 0 30px rgba(193,39,45,0.8), 0 0 60px rgba(193,39,45,0.3)" },
-                },
-                "neon-pulse-green": {
-                    "0%, 100%": { boxShadow: "0 0 15px rgba(0,146,69,0.4)" },
-                    "50%": { boxShadow: "0 0 30px rgba(0,146,69,0.8), 0 0 60px rgba(0,146,69,0.3)" },
-                },
+
                 "fade-in-up": {
                     from: { opacity: "0", transform: "translateY(30px)" },
                     to: { opacity: "1", transform: "translateY(0)" },
@@ -96,8 +85,7 @@ const config: Config = {
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
-                "neon-pulse-red": "neon-pulse-red 2s ease-in-out infinite",
-                "neon-pulse-green": "neon-pulse-green 2s ease-in-out infinite",
+
                 "fade-in-up": "fade-in-up 0.6s ease-out forwards",
                 "slide-in-left": "slide-in-left 0.6s ease-out forwards",
                 "float": "float 6s ease-in-out infinite",

@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { Menu, X, User } from "lucide-react";
 import Image from "next/image";
-import { ThemeToggle } from "./ThemeToggle";
+
 import { LanguageToggle } from "./LanguageToggle";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -81,7 +81,6 @@ export function Navbar() {
 
                     <div className="flex items-center gap-4 pl-4 border-l border-border">
                         <div className="flex items-center gap-1">
-                            <ThemeToggle />
                             <LanguageToggle />
                         </div>
                         <Link
@@ -140,7 +139,6 @@ export function Navbar() {
                                 {t("settings")}
                             </span>
                             <div className="flex items-center gap-2">
-                                <ThemeToggle />
                                 <LanguageToggle />
                             </div>
                         </div>
