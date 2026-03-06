@@ -57,8 +57,11 @@ export const productSchema = defineType({
             type: "string",
             options: {
                 list: [
-                    { title: "🥩 Animal (viande, poisson, produits laitiers...)", value: "animal" },
-                    { title: "🌱 Végétal (légumes, fruits, grains...)", value: "plant" },
+                    { title: "🥩 Saucissons", value: "saucissons" },
+                    { title: "🌭 Saucisses", value: "saucisses" },
+                    { title: "🔥 Viandes Fumées", value: "viandes-fumees" },
+                    { title: "🌱 Végétal", value: "vegetal" },
+                    { title: "📦 En Gros", value: "wholesale" },
                 ],
                 layout: "radio",
             },

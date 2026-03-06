@@ -4,12 +4,38 @@ import { ProductCard } from "./ProductCard";
 import Link from "next/link";
 import { ArrowRight, Package } from "lucide-react";
 
-export async function ProductGrid({ locale }: { locale: string }) {
+export async function ProductGrid({ locale, category }: { locale: string, category?: string }) {
     const t = await getTranslations("favorites");
 
     let products: any[] = [];
     try {
         products = await getAllProducts();
+        if (category) {
+            const lowCat = category.toLowerCase();
+            products = products.filter(p => {
+                const pCat = p.category?.toLowerCase() || "";
+                const pSub = p.subcategory?.toLowerCase() || "";
+                const pName = p.name?.[locale as "fr" | "en"]?.toLowerCase() || p.name?.fr?.toLowerCase() || "";
+
+                if (lowCat === 'saucissons') {
+                    return pSub.includes('saucisson') || pSub.includes('saucisse à cuire') || pCat === 'saucissons';
+                }
+                if (lowCat === 'saucisses') {
+                    // Include sausages but exclude 'saucisse à cuire' if it should belong only to saucissons
+                    // The user said: "saucisse à cuire" belongs to "saucisson"
+                    return pSub.includes('saucisse') && !pSub.includes('saucisse à cuire');
+                }
+                if (lowCat === 'viandes-fumees' || lowCat === 'viandes_fumees') {
+                    return pSub.includes('fumé') || pName.includes('fumé') || pCat.includes('fumé') || pCat === 'viandes_fumees';
+                }
+                if (lowCat === 'vegetal' || lowCat === 'végétal') {
+                    return pCat === 'vegetal' || pSub === 'vegetal' || pCat === 'végétal' || pSub === 'végétal';
+                }
+
+                // Default fallback
+                return pCat === lowCat || pSub === lowCat || pCat.replace(/-/g, '_') === lowCat.replace(/-/g, '_');
+            });
+        }
     } catch {
         products = [];
     }
@@ -27,7 +53,7 @@ export async function ProductGrid({ locale }: { locale: string }) {
                     <div>
                         <span className="text-neon-red text-sm font-heading font-semibold
                              uppercase tracking-widest mb-2 block">
-                            ⭐ Top Picks
+                            {t("badge")}
                         </span>
                         <h2
                             id="favorites-heading"
@@ -62,8 +88,7 @@ export async function ProductGrid({ locale }: { locale: string }) {
                             {t("empty")}
                         </p>
                         <p className="text-sm text-muted-foreground">
-                            Lancez <code className="text-neon-red">npm run seed</code> pour
-                            ajouter des produits de démo
+                            {t("seed_info")}
                         </p>
                     </div>
                 )}

@@ -36,7 +36,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
             siteName: "Batela Foods",
             images: [
                 {
-                    url: `/${locale}/opengraph-image`,
+                    url: `https://batelafoods.cm/${locale}/opengraph-image`,
                     width: 1200,
                     height: 630,
                     alt: "Batela Foods — Saveurs du Cameroun",

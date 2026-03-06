@@ -73,7 +73,7 @@ export async function getAllProducts(): Promise<Product[]> {
 
 // Get all product slugs for static generation
 export async function getAllProductSlugs(): Promise<{ slug: string }[]> {
-  const query = `*[_type == "product"] { "slug": slug.current }`;
+  const query = `*[_type == "product" && defined(slug.current)] { "slug": slug.current }`;
   return sanityClient.fetch<{ slug: string }[]>(query);
 }
 

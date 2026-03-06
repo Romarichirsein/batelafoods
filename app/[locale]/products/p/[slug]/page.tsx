@@ -12,14 +12,21 @@ import { QuantitySelector } from "@/components/products/QuantitySelector";
 import { RelatedCarousel } from "@/components/products/RelatedCarousel";
 
 export async function generateStaticParams() {
-    const slugs = await getAllProductSlugs();
-    const params = [];
-    for (const locale of ['fr', 'en']) {
-        for (const meta of slugs) {
-            params.push({ locale, slug: meta.slug });
+    try {
+        const slugs = await getAllProductSlugs();
+        const params = [];
+        for (const locale of ['fr', 'en']) {
+            for (const meta of slugs) {
+                if (meta.slug) {
+                    params.push({ locale, slug: meta.slug });
+                }
+            }
         }
+        return params;
+    } catch (e) {
+        console.error("Error in generateStaticParams for products:", e);
+        return [];
     }
-    return params;
 }
 
 export async function generateMetadata({
@@ -67,7 +74,7 @@ export default async function ProductDetailPage({
             <div className="container-max">
                 {/* Breadcrumb / Back */}
                 <Link
-                    href="/#shop"
+                    href="/products"
                     className="inline-flex items-center gap-2 text-muted-foreground hover:text-neon-red transition-colors mb-8 group"
                 >
                     <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />

@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
     const t = useTranslations("hero");
@@ -11,11 +12,23 @@ export function Hero() {
 
     return (
         <section
-            className="relative min-h-screen flex items-center justify-center overflow-hidden neon-grid-bg"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden"
             aria-label="Hero Batela Foods"
         >
-            {/* Background gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+            {/* Background Image with Overlay */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/hero-product.jpg"
+                    alt="Batela Foods Featured Product"
+                    fill
+                    className="object-cover opacity-60 mix-blend-luminosity"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background" />
+            </div>
+
+            {/* Neon grid background */}
+            <div className="absolute inset-0 z-1 neon-grid-bg opacity-30" />
 
             {/* Neon glow orbs */}
             <div
@@ -37,7 +50,7 @@ export function Hero() {
                         border border-neon-red/40 bg-neon-red/10 text-neon-red text-sm sm:text-base
                         font-heading font-bold tracking-widest uppercase mb-8
                         animate-fade-in-up shadow-neon-red-sm">
-                    🌍 Cameroun — Qualité Premium
+                    {t("badge")}
                 </div>
 
                 {/* Main headline */}
@@ -46,7 +59,7 @@ export function Hero() {
                      text-foreground leading-tight mb-6 animate-fade-in-up
                      [animation-delay:100ms] opacity-0 [animation-fill-mode:forwards]"
                 >
-                    {t("tagline").split("\n").map((line, i) => (
+                    {t("tagline").split("\n").map((line: string, i: number) => (
                         <span key={i} className="block">
                             {i === 0 ? (
                                 line

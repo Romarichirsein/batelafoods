@@ -46,7 +46,7 @@ export function AuthForm({ type }: { type: "login" | "register" }) {
                     <input
                         type="email"
                         className="w-full bg-background border border-border rounded-lg px-4 py-3 placeholder:text-muted-foreground/50 focus:outline-none focus:border-neon-red focus:ring-1 focus:ring-neon-red transition-all"
-                        placeholder="jean@example.com"
+                        placeholder={t("email_placeholder")}
                     />
                 </div>
 
@@ -86,7 +86,7 @@ export function AuthForm({ type }: { type: "login" | "register" }) {
                     </div>
                 )}
 
-                <button type="submit" className="w-full bg-neon-red text-white font-bold py-3.5 rounded-lg hover:bg-neon-red-dark hover:shadow-neon-red-sm transition-all active:scale-[0.98] flex justify-center items-center gap-2 uppercase tracking-wide">
+                <button type="submit" className="w-full bg-neon-red text-white font-black py-4 rounded-xl hover:bg-neon-red-dark hover:shadow-neon-red transition-all active:scale-[0.98] flex justify-center items-center gap-2 uppercase tracking-widest animate-neon-pulse-red shadow-neon-red-sm">
                     {type === "login" ? t("btn_login") : t("btn_register")}
                 </button>
             </form>

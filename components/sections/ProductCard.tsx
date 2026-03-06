@@ -30,8 +30,8 @@ export function ProductCard({ product }: ProductCardProps) {
         e.preventDefault();
         e.stopPropagation();
         addItem(product);
-        toast.success(`${productName} ajouté au panier`, {
-            description: "Vous pouvez finaliser votre commande dans le panier.",
+        toast.success(`${productName} ${t("added_title")}`, {
+            description: t("added_desc"),
         });
     };
 
@@ -79,7 +79,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
                     <div className="flex items-center gap-2">
                         <Link
-                            href={`/products/${product.slug?.current}`}
+                            href={`/products/p/${product.slug?.current}`}
                             className="inline-flex items-center gap-1.5 text-sm font-semibold
                          text-neon-green hover:gap-2.5 transition-all duration-200
                          hover:text-neon-green-dark"

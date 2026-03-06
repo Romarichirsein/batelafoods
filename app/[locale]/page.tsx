@@ -5,6 +5,7 @@ import { DeliveryStrip } from "@/components/sections/DeliveryStrip";
 import { WholesaleTeaser } from "@/components/sections/WholesaleTeaser";
 import { ProductGridSkeleton } from "@/components/sections/ProductSkeleton";
 import { About } from "@/components/sections/About";
+import { NewsTeaser } from "@/components/sections/NewsTeaser";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({ params }: { params: { locale: string } }) {
@@ -40,6 +41,8 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                     <ProductGrid locale={locale} />
                 </Suspense>
             </section>
+
+            <NewsTeaser locale={locale} />
 
             <WholesaleTeaser locale={locale} />
         </main>

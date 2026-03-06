@@ -13,9 +13,9 @@ import { CartDrawer } from "@/components/cart/CartDrawer";
 
 const navLinks = [
     { href: "/", key: "home" },
-    { href: "/#shop", key: "shop" },
-    { href: "/wholesale", key: "wholesale" },
-    { href: "/blog", key: "blog" },
+    { href: "/products", key: "products" },
+    { href: "/recipes", key: "recipes" },
+    { href: "/about", key: "about" },
     { href: "/contact", key: "contact" },
 ];
 
@@ -86,7 +86,7 @@ export function Navbar() {
                         <Link
                             href="/login"
                             className="p-2 rounded-full hover:bg-muted transition-all duration-200 border border-transparent hover:border-neon-red/30 group"
-                            aria-label="Mon compte"
+                            aria-label={t("account")}
                         >
                             <User className="w-5 h-5 text-foreground group-hover:text-neon-red transition-colors" />
                         </Link>
@@ -99,7 +99,7 @@ export function Navbar() {
                     <Link
                         href="/login"
                         className="p-2 rounded-full hover:bg-muted transition-colors hover:text-neon-red"
-                        aria-label="Mon compte"
+                        aria-label={t("account")}
                     >
                         <User className="w-5 h-5" />
                     </Link>
@@ -107,7 +107,7 @@ export function Navbar() {
                     <button
                         className="p-2 text-foreground focus-visible:outline-none"
                         onClick={() => setIsOpen(!isOpen)}
-                        aria-label={isOpen ? "Fermer" : "Menu"}
+                        aria-label={isOpen ? t("menu_close") : t("menu_open")}
                     >
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>

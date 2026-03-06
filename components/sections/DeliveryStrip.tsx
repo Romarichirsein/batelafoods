@@ -1,67 +1,35 @@
-import { getTranslations } from "next-intl/server";
-import { MapPin, Clock, Truck } from "lucide-react";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { Truck } from "lucide-react";
 
 export async function DeliveryStrip({ locale }: { locale: string }) {
+    unstable_setRequestLocale(locale);
     const t = await getTranslations({ locale, namespace: "delivery" });
 
     return (
-        <section
-            className="border-y border-border bg-card"
-            aria-label={t("title")}
-        >
-            <div className="container-max section-padding py-10">
-                <h2 className="font-heading font-black text-2xl lg:text-3xl text-center
-                       text-foreground mb-8">
-                    {t("title")}
-                </h2>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                    {/* Douala */}
-                    <div
-                        className="p-6 rounded-xl border border-neon-red/20 bg-neon-red/5
-                       hover:border-neon-red/40 hover:shadow-neon-red-sm transition-all duration-300
-                       flex items-start gap-4"
-                    >
-                        <div className="p-3 rounded-full bg-neon-red/10 flex-shrink-0">
-                            <MapPin className="w-6 h-6 text-neon-red" />
-                        </div>
-                        <div>
-                            <h3 className="font-heading font-bold text-lg text-foreground">
-                                {t("douala_title")}
-                            </h3>
-                            <p className="flex items-center gap-1.5 text-neon-red font-semibold mt-1">
-                                <Clock className="w-4 h-4" />
-                                {t("douala_time")}
-                            </p>
-                        </div>
+        <div className="bg-[#0a0a0a] py-3 overflow-hidden border-y border-white/5 relative group">
+            <div className="absolute inset-0 bg-neon-red/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="container-max relative z-10">
+                <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-2 text-center">
+                    <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-neon-red animate-pulse" />
+                        <span className="text-white font-heading font-black text-[10px] md:text-xs uppercase tracking-[0.2em]">
+                            {t("title")}
+                        </span>
                     </div>
-
-                    {/* Other cities */}
-                    <div
-                        className="p-6 rounded-xl border border-neon-green/20 bg-neon-green/5
-                       hover:border-neon-green/40 hover:shadow-neon-green-sm transition-all duration-300
-                       flex items-start gap-4"
-                    >
-                        <div className="p-3 rounded-full bg-neon-green/10 flex-shrink-0">
-                            <Truck className="w-6 h-6 text-neon-green" />
-                        </div>
-                        <div>
-                            <h3 className="font-heading font-bold text-lg text-foreground">
-                                {t("cities_title")}
-                            </h3>
-                            <p className="flex items-center gap-1.5 text-neon-green font-semibold mt-1">
-                                <Clock className="w-4 h-4" />
-                                {t("cities_time")}
-                            </p>
+                    <div className="hidden md:block w-px h-4 bg-white/10" />
+                    <div className="flex items-center gap-3">
+                        <Truck className="w-4 h-4 text-neon-green" />
+                        <span className="text-white/80 font-body text-xs md:text-sm tracking-wide">
+                            {t("subtitle")}
+                        </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <div className="px-2 py-0.5 rounded border border-white/20 text-[9px] font-black uppercase tracking-widest text-white/40">
+                            {t("badge")}
                         </div>
                     </div>
                 </div>
-
-                {/* Note */}
-                <p className="text-center text-sm text-muted-foreground mt-6">
-                    {t("note")}
-                </p>
             </div>
-        </section>
+        </div>
     );
 }

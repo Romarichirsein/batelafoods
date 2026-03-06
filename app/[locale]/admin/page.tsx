@@ -13,13 +13,13 @@ const kpis = [
 ];
 
 const recentOrders = [
-    { id: "#BF-0324", customer: "Marie Kamga", date: "21 Fév 2026", status: "Livré", total: "18 500" },
-    { id: "#BF-0323", customer: "Jean-Paul Mbu", date: "21 Fév 2026", status: "En cours", total: "32 000" },
-    { id: "#BF-0322", customer: "Rose Ndikum", date: "20 Fév 2026", status: "En attente", total: "8 750" },
-    { id: "#BF-0321", customer: "Alain Fotso", date: "20 Fév 2026", status: "Livré", total: "45 200" },
-    { id: "#BF-0320", customer: "Bernadette Elong", date: "19 Fév 2026", status: "Annulé", total: "12 000" },
-    { id: "#BF-0319", customer: "Michel Tagne", date: "19 Fév 2026", status: "Livré", total: "27 000" },
-    { id: "#BF-0318", customer: "Solange Biyong", date: "18 Fév 2026", status: "En cours", total: "19 500" },
+    { id: "#BF-0324", customer: "Alice Ngatchou", date: "21 Fév 2026", status: "Livré", total: "18 500" },
+    { id: "#BF-0323", customer: "Emmanuel Mbarga", date: "21 Fév 2026", status: "En cours", total: "32 000" },
+    { id: "#BF-0322", customer: "Christelle Tcheuko", date: "20 Fév 2026", status: "En attente", total: "8 750" },
+    { id: "#BF-0321", customer: "Hervé Djoko", date: "20 Fév 2026", status: "Livré", total: "45 200" },
+    { id: "#BF-0320", customer: "Fatimatou Moussa", date: "19 Fév 2026", status: "Annulé", total: "12 000" },
+    { id: "#BF-0319", customer: "Pierre Ndzana", date: "19 Fév 2026", status: "Livré", total: "27 000" },
+    { id: "#BF-0318", customer: "Jeannette Atangana", date: "18 Fév 2026", status: "En cours", total: "19 500" },
 ];
 
 const statusConfig: Record<string, { color: string; icon: typeof CheckCircle2 }> = {
@@ -30,10 +30,10 @@ const statusConfig: Record<string, { color: string; icon: typeof CheckCircle2 }>
 };
 
 const topProducts = [
-    { emoji: "🥜", name: "Pâte d'Arachide 500g", sales: 87, revenue: "392 000 FCFA" },
-    { emoji: "🌽", name: "Farine de Maïs 1kg", sales: 65, revenue: "227 500 FCFA" },
-    { emoji: "🍅", name: "Concentré de Tomate", sales: 54, revenue: "162 000 FCFA" },
-    { emoji: "🌿", name: "Nkui Premium", sales: 42, revenue: "294 000 FCFA" },
+    { emoji: "🥩", name: "Saucisson Fumé Premium", sales: 142, revenue: "1 065 000 FCFA" },
+    { emoji: "🌭", name: "Saucisses de Porc Artisanales", sales: 98, revenue: "490 000 FCFA" },
+    { emoji: "🔥", name: "Poulet Fumé au Bois de Hêtre", sales: 76, revenue: "608 000 FCFA" },
+    { emoji: "📦", name: "Lot Saucissons (Vente en Gros)", sales: 24, revenue: "1 440 000 FCFA" },
 ];
 
 export default function AdminDashboard({ params: { locale } }: { params: { locale: string } }) {

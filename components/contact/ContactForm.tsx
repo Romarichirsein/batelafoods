@@ -4,8 +4,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -28,18 +29,46 @@ export function ContactForm() {
     const schema = buildSchema(tVal);
     type FormData = z.infer<typeof schema>;
 
+    const searchParams = useSearchParams();
     const {
         register,
         handleSubmit,
         reset,
+        setValue,
         formState: { errors },
     } = useForm<FormData>({ resolver: zodResolver(schema) });
 
+    useEffect(() => {
+        const subject = searchParams.get("subject");
+        if (subject) {
+            setValue("subject", subject);
+        }
+    }, [searchParams, setValue]);
+
+    const WHATSAPP_NUMBER = "237699984029"; // Batela Foods WhatsApp number
+
     const onSubmit = async (data: FormData) => {
         setStatus("sending");
-        // Simulate API call
-        await new Promise((r) => setTimeout(r, 1500));
-        console.log("Contact form submission:", data);
+
+        // Build the WhatsApp message
+        const text = [
+            `📬 *Nouveau message via Batela Foods*`,
+            ``,
+            `👤 *Nom :* ${data.name}`,
+            `📧 *Contact :* ${data.contact}`,
+            `📌 *Sujet :* ${data.subject}`,
+            ``,
+            `💬 *Message :*`,
+            data.message,
+        ].join("\n");
+
+        const encoded = encodeURIComponent(text);
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
+
+        // Small delay for UX then open WhatsApp
+        await new Promise((r) => setTimeout(r, 500));
+        window.open(url, "_blank", "noopener,noreferrer");
+
         setStatus("success");
         reset();
         setTimeout(() => setStatus("idle"), 5000);
@@ -49,7 +78,7 @@ export function ContactForm() {
         <form
             onSubmit={handleSubmit(onSubmit)}
             className="space-y-6"
-            aria-label="Formulaire de contact"
+            aria-label={t("aria_label")}
             noValidate
         >
             {/* Name */}

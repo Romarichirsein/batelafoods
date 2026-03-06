@@ -46,7 +46,7 @@ export function RelatedCarousel({ currentSlug }: RelatedCarouselProps) {
                             onClick={scrollPrev}
                             className="p-2 rounded-lg border border-border hover:border-neon-red/50
                          hover:bg-neon-red/10 transition-all duration-200"
-                            aria-label="Précédent"
+                            aria-label={t("prev_label")}
                         >
                             <ChevronLeft className="w-5 h-5" />
                         </button>
@@ -54,7 +54,7 @@ export function RelatedCarousel({ currentSlug }: RelatedCarouselProps) {
                             onClick={scrollNext}
                             className="p-2 rounded-lg border border-border hover:border-neon-red/50
                          hover:bg-neon-red/10 transition-all duration-200"
-                            aria-label="Suivant"
+                            aria-label={t("next_label")}
                         >
                             <ChevronRight className="w-5 h-5" />
                         </button>

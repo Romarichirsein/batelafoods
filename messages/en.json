@@ -4,25 +4,35 @@
         "shop": "SHOP",
         "products": "PRODUCTS",
         "wholesale": "WHOLESALE",
-        "blog": "BLOG",
+        "news": "NEWS",
         "contact": "CONTACT",
         "login": "LOGIN",
         "cart": "CART",
         "settings": "SETTINGS",
-        "cta_order": "ORDER NOW"
+        "recipes": "RECIPES",
+        "socials": "SOCIAL MEDIA",
+        "about": "ABOUT US",
+        "cta_order": "ORDER NOW",
+        "account": "My account",
+        "menu_open": "Menu",
+        "menu_close": "Close",
+        "see_all": "See all"
     },
     "hero": {
+        "badge": "🌍 Cameroon — Premium Quality",
         "tagline": "DISCOVER THE\nFLAVORS OF CAMEROON",
         "subtitle": "Batela Foods brings you the best of local, fresh and authentic products, directly to your doorstep in Douala and beyond.",
         "cta_order": "ORDER NOW",
         "cta_catalogue": "VIEW CATALOGUE"
     },
     "favorites": {
+        "badge": "⭐ Top Picks",
         "title": "OUR BEST-SELLERS",
         "subtitle": "The Batela community's favorite products, selected for their premium quality.",
         "view_all": "VIEW ALL",
         "loading": "Loading gems...",
-        "empty": "No products found for now"
+        "empty": "No products found for now",
+        "seed_info": "Run npm run seed to add demo products"
     },
     "delivery": {
         "title": "FAST & FRESH SHIPPING",
@@ -30,7 +40,9 @@
         "douala_time": "2h Delivery",
         "cities_title": "OTHER CITIES",
         "cities_time": "24h Delivery",
-        "note": "*Times may vary depending on stock availability and your exact location."
+        "note": "*Times may vary depending on stock availability and your exact location.",
+        "subtitle": "Express home delivery",
+        "badge": "Douala Only"
     },
     "wholesale": {
         "badge": "PARTNERSHIP",
@@ -43,7 +55,9 @@
     },
     "product_card": {
         "price_unit": "FCFA",
-        "view_details": "Details"
+        "view_details": "Details",
+        "added_title": "added to cart",
+        "added_desc": "You can finalize your order in the cart."
     },
     "product_detail": {
         "back": "Back to shop",
@@ -54,11 +68,19 @@
         "storage": "Storage",
         "quantity": "Quantity",
         "related": "SIMILAR PRODUCTS",
-        "price_unit": "FCFA"
+        "price_unit": "FCFA",
+        "decrease": "Decrease",
+        "increase": "Increase",
+        "prev_label": "Previous",
+        "next_label": "Next"
     },
     "contact": {
+        "badge": "📬 Contact",
+        "title_prefix": "Contact",
+        "title_highlight": "Batela Foods",
         "title": "CONTACT US",
         "subtitle": "A question? A special order? Our team is at your service.",
+        "aria_label": "Contact form",
         "form_name": "Your Name",
         "form_name_placeholder": "Ex: John Doe",
         "form_email": "Email or Phone",
@@ -71,22 +93,29 @@
         "form_sending": "SENDING...",
         "form_success": "Thank you! Your message has been sent. We will get back to you soon.",
         "form_error": "Oops! An error occurred while sending. Please try again later.",
+        "form_title": "Send a Message",
+        "whatsapp_label": "WhatsApp",
+        "whatsapp_status": "Chat available",
         "info_title": "Contact Information",
+        "socials_title": "Social Networks",
         "phone": "Phone",
         "email": "Email",
         "address": "Location",
         "address_value": "Douala, Cameroon",
         "hours": "Hours",
         "hours_value": "Mon-Sat: 08:00 - 18:00",
-        "map_title": "Where to find us"
+        "map_title": "Where to find us",
+        "map_address_title": "Our Headquarters",
+        "map_address_subtitle": "Douala, Cameroon"
     },
     "footer": {
         "about_title": "BATELA FOODS",
         "about_text": "The best of Cameroonian terroir, carefully selected for a healthy and authentic diet.",
         "nav_title": "NAVIGATION",
         "contact_title": "FOLLOW US",
-        "rights": "© 2024 Batela Foods. All rights reserved.",
-        "made_in": "Proudly made in Cameroon 🇨🇲"
+        "rights": "© 2026 Batela Foods. All rights reserved.",
+        "made_in": "Proudly made in Cameroon 🇨🇲",
+        "powered_by": "Powered by Wellborne"
     },
     "validation": {
         "name_required": "Name is required",
@@ -106,7 +135,15 @@
         "checkout": "CHECKOUT NOW",
         "quantity": "Quantity",
         "total": "Total",
-        "remove": "Remove"
+        "remove": "Remove",
+        "whatsapp_intro": "Hello Batela Foods! I would like to place an order:",
+        "subtotal": "Subtotal",
+        "delivery": "Delivery",
+        "free": "Free",
+        "whatsapp_footer": "Please let me know how to proceed with payment via WhatsApp and delivery.",
+        "whatsapp_total": "*TOTAL : {total} {unit}*",
+        "default_product_name": "Product",
+        "delivery_note": "Free delivery in Douala <br /> from 50,000 FCFA"
     },
     "theme": {
         "toggle": "Change theme",
@@ -122,6 +159,7 @@
         "title": "Login",
         "subtitle": "Access your customer account",
         "email_label": "Email",
+        "email_placeholder": "your@email.com",
         "password_label": "Password",
         "forgot_password": "Forgot password?",
         "remember_me": "Remember me",
@@ -135,23 +173,129 @@
         "name_label": "Full Name",
         "name_placeholder": "John Doe",
         "email_label": "Email",
+        "email_placeholder": "your@email.com",
         "password_label": "Password",
         "btn_register": "CREATE ACCOUNT",
         "has_account": "Already have an account?",
         "login_link": "Log in"
     },
-    "blog": {
-        "title": "News & Blog",
+    "news": {
+        "title": "NEWS",
         "subtitle": "Stay updated with Batela Foods, new recipes, and Cameroonian agriculture.",
+        "view_all": "VIEW ALL NEWS",
         "back_home": "BACK TO HOME",
         "read_more": "Read more",
         "empty": "No articles yet",
-        "empty_subtitle": "Check back soon to discover our latest news!"
+        "empty_subtitle": "Check back soon to discover our latest news!",
+        "badge": "News",
+        "discover": "Read article"
     },
     "about": {
         "title": "OUR STORY",
         "subtitle": "Batela Foods embodies local flavors, universal quality, nature, and professionalism.",
         "promoter": "A Word from the Promoter",
-        "message": "Welcome to Batela Foods. Since our inception, our mission has been to elevate local Cameroonian flavors while offering universal quality. We guarantee natural products, sources of vitality, prepared with rigorous professionalism. Discover our passion for excellence and freshness."
+        "message": "Welcome to Batela Foods. Since our inception, our mission has been to elevate local Cameroonian flavors while offering universal quality. We guarantee natural products, sources of vitality, prepared with rigorous professionalism. Discover our passion for excellence and freshness.",
+        "ceo_title": "A Word from the Promoter",
+        "ceo_greeting": "Dear friends, dear customers,",
+        "ceo_p1": "We are delighted to welcome you to the BATELA FOODS website, a company founded with passion and determination to share with you the flavors and traditions of our country.",
+        "ceo_p2": "Since our creation in 2021, we have been committed to producing high-quality, authentic, and delicious food products that reflect our African culture and heritage. We are proud of our team, our partners, and our customers who share our vision and commitment.",
+        "ceo_p3": "On this website, you will find information about our products, our values, and our history. We invite you to explore our social media pages, discover our recipes, and contact us with any questions or suggestions.",
+        "ceo_p4": "Thank you for your trust and loyalty. We look forward to serving you and sharing the flavors of BATELA FOODS with you!",
+        "ceo_name": "Dolvys NGOULE NANA",
+        "ceo_role": "CEO BATELA FOODS",
+        "history_title": "OUR HISTORY",
+        "history_text": "Since its founding in 2021, BATELA FOODS has established itself as a benchmark for agro-industrial excellence in Cameroon. Our journey began with a simple but ambitious mission: to reinvent local delicatessen and smoked products with international quality standards.",
+        "values_title": "VALUES & MISSION",
+        "values_text": "Authenticity is our compass. We rigorously select 100% natural ingredients to offer healthy, nutritious, and tasty products. Our mission is to enhance the African culinary heritage through innovation.",
+        "team_title": "MANAGEMENT TEAM",
+        "team_text": "Behind every Batela product lies a team of passionate individuals, combining traditional expertise with modern food processing techniques to ensure your satisfaction.",
+        "certifications_title": "CERTIFICATIONS & AWARDS",
+        "certifications_text": "We apply the strictest food safety standards. Every stage of our production is monitored to ensure optimal freshness and hygiene, recognized by our partners.",
+        "careers_title": "JOIN THE ADVENTURE",
+        "careers_text": "Do you share our passion for excellence and local roots? Batela Foods is constantly growing and looking for determined talents.",
+        "careers_cta": "Spontaneous Application",
+        "learn_more": "Learn more about us"
+    },
+    "categories": {
+        "title": "OUR CATEGORIES",
+        "view_range": "View Range",
+        "saucissons": {
+            "title": "Salami & Saucissons",
+            "description": "Discover the authenticity of our artisanal saucissons, prepared according to traditional methods for an unmatched taste."
+        },
+        "saucisses": {
+            "title": "Sausages",
+            "description": "Fresh and flavorful sausages, ideal for your grills or family dishes."
+        },
+        "viandes_fumees": {
+            "title": "Smoked Meats",
+            "description": "Our meats smoked with selected wood bring a touch of character and tradition to your meals."
+        },
+        "vegetal": {
+            "title": "Plant-Based",
+            "description": "Discover our tasty and healthy plant-based alternatives for a diversified diet."
+        },
+        "tips": {
+            "badge": "💡 TIPS & RECIPES",
+            "back": "Back to products",
+            "cta": "See {category} recipes",
+            "saucissons": {
+                "title": "The Art of Tasting Our Saucissons",
+                "description": "Slice thinly and let breathe at room temperature to release all the aromas of our local spices.",
+                "card1": "Fine Slicing",
+                "card2": "Local Appetizer"
+            },
+            "saucisses": {
+                "title": "Mastering the Cooking of Your Sausages",
+                "description": "Sear on high heat then finish cooking gently to keep all the moisture and juice inside.",
+                "card1": "Quick Searing",
+                "card2": "Perfect Pairings"
+            },
+            "viandes_fumees": {
+                "title": "Elevating Our Smoked Meats",
+                "description": "Ideal for your stews and soups, our smoked meats bring an unmatched depth of flavor to your traditional dishes.",
+                "card1": "Slow Infusion",
+                "card2": "Perfect Pairings"
+            },
+            "generic": {
+                "title": "The Taste of Authenticity",
+                "description": "Discover how to integrate our products into your daily cooking for healthy and tasty meals.",
+                "card1": "Local Product",
+                "card2": "Freshness"
+            }
+        }
+    },
+    "recipes": {
+        "title": "RECIPES & TIPS",
+        "subtitle": "Enhance your dishes with Batela Foods products.",
+        "view_all": "VIEW ALL RECIPES",
+        "monthly_menu": "Monthly menus for parents",
+        "kids_menu_title": "Special Kids: Balanced & Tasty",
+        "kids_menu_subtitle": "Because eating well starts young, discover our healthy menu ideas for your little ones.",
+        "recipe1_title": "Pan-fried Batela sausages with caramelized onions",
+        "recipe2_title": "Smoked meat stew with seasonal vegetables",
+        "recipe3_title": "Honey-glazed Batela mini hot-dogs",
+        "recipe4_title": "Fried rice with smoked meat strips",
+        "facebook_hint": "Follow our page for the menus of the week"
+    },
+    "socials": {
+        "title": "Our Social",
+        "subtitle": "Networks",
+        "intro": "Stay connected with the Batela Foods universe. Discover our news, recipes and share your passion for taste.",
+        "follow_us": "Follow us",
+        "join": "JOIN",
+        "hashtag_title": "Share your Batela moments",
+        "hashtag_text": "Use the hashtag {hashtag} on your best photos for a chance to be featured on our pages!",
+        "platforms": {
+            "facebook": {
+                "description": "Follow our live events and discover our new arrivals."
+            },
+            "instagram": {
+                "description": "Behind the scenes of Batela Foods and photos of our exceptional products."
+            },
+            "whatsapp": {
+                "description": "Contact us directly for your orders and questions."
+            }
+        }
     }
 }

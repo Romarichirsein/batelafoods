@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 export function About() {
@@ -35,9 +36,16 @@ export function About() {
                             <h3 className="font-heading font-bold text-lg text-neon-green mb-3 flex items-center gap-2">
                                 <span className="text-2xl">🌱</span> {t("promoter")}
                             </h3>
-                            <p className="font-body text-muted-foreground leading-relaxed italic text-base sm:text-lg">
+                            <p className="font-body text-muted-foreground leading-relaxed italic text-base sm:text-lg mb-6">
                                 "{t("message")}"
                             </p>
+                            <Link
+                                href="/about"
+                                className="inline-flex items-center text-neon-red font-heading font-bold uppercase tracking-widest text-sm hover:underline group"
+                            >
+                                {t("learn_more")}
+                                <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
+                            </Link>
                         </div>
                     </div>
                 </div>

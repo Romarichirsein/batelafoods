@@ -12,7 +12,10 @@ export function Footer() {
 
     const navLinks = [
         { href: "/", label: tNav("home") },
-        { href: "/#shop", label: tNav("shop") },
+        { href: "/products", label: tNav("products") },
+        { href: "/about", label: tNav("about") },
+        { href: "/recipes", label: tNav("recipes") },
+        { href: "/socials", label: tNav("socials") },
         { href: "/contact", label: tNav("contact") },
     ];
 
@@ -42,14 +45,19 @@ export function Footer() {
                             </span>
                             <div className="flex gap-2">
                                 <a
-                                    href="https://instagram.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="/socials"
                                     className="p-2 rounded-lg bg-muted hover:bg-neon-red hover:text-white
-                             transition-all duration-200 hover:shadow-neon-red-sm text-muted-foreground"
+                             transition-all duration-200 hover:shadow-neon-red-sm text-muted-foreground flex items-center justify-center"
+                                    title="Tous nos réseaux"
                                 >
                                     <Instagram className="w-4 h-4" />
                                 </a>
+                                <Link
+                                    href="/socials"
+                                    className="text-[10px] font-black uppercase tracking-tighter text-muted-foreground hover:text-neon-red transition-colors"
+                                >
+                                    {tNav("see_all")}
+                                </Link>
                                 <a
                                     href="https://facebook.com"
                                     target="_blank"
@@ -125,6 +133,9 @@ export function Footer() {
                         items-center justify-between gap-2">
                     <p className="text-xs text-muted-foreground">{t("rights")}</p>
                     <p className="text-xs text-muted-foreground">{t("made_in")}</p>
+                    <p className="text-xs text-muted-foreground/60 italic">
+                        {t("powered_by")}
+                    </p>
                 </div>
             </div>
         </footer>

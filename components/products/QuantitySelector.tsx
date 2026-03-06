@@ -39,7 +39,7 @@ export function QuantitySelector({
                      flex items-center justify-center hover:bg-neon-red/10
                      hover:border-neon-red/50 disabled:opacity-40 disabled:cursor-not-allowed
                      transition-all duration-200"
-                    aria-label="Diminuer"
+                    aria-label={t("decrease")}
                 >
                     <Minus className="w-4 h-4" />
                 </button>
@@ -58,7 +58,7 @@ export function QuantitySelector({
                      flex items-center justify-center hover:bg-neon-red/10
                      hover:border-neon-red/50 disabled:opacity-40 disabled:cursor-not-allowed
                      transition-all duration-200"
-                    aria-label="Augmenter"
+                    aria-label={t("increase")}
                 >
                     <Plus className="w-4 h-4" />
                 </button>

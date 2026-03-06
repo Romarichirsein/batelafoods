@@ -97,9 +97,9 @@ export default async function BlogPostPage({ params: { slug, locale } }: { param
         <main className="min-h-screen pt-24 pb-20 bg-background">
             <article className="container-max max-w-4xl mx-auto px-4 sm:px-6">
 
-                <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-neon-red mb-8 transition-colors font-semibold uppercase tracking-wider">
+                <Link href="/news" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-neon-red mb-8 transition-colors font-semibold uppercase tracking-wider">
                     <ArrowLeft className="w-4 h-4" />
-                    RETOUR AU BLOG
+                    RETOUR AUX ACTUALITÉS
                 </Link>
 
                 {/* Article Header */}

@@ -26,17 +26,17 @@ export function CartDrawer() {
     const handleCheckout = () => {
         if (items.length === 0) return;
 
-        let message = "Bonjour Batela Foods ! Je souhaite passer une commande :\n\n";
+        let message = `${t("whatsapp_intro")}\n\n`;
         items.forEach(item => {
-            const name = item.name?.[locale] ?? item.name?.fr ?? "Produit";
-            message += `- ${item.quantity}x ${name} (${formatPrice(item.price * item.quantity)} FCFA)\n`;
+            const name = item.name?.[locale] ?? item.name?.fr ?? t("default_product_name");
+            message += `- ${item.quantity}x ${name} (${formatPrice(item.price * item.quantity)} ${tCommon("price_unit")})\n`;
         });
 
-        message += `\nSous-total : ${formatPrice(subtotal)} FCFA`;
-        message += `\nLivraison : ${deliveryFee === 0 ? "Gratuite" : formatPrice(deliveryFee) + " FCFA"}`;
-        message += `\n*TOTAL : ${formatPrice(total)} FCFA*`;
+        message += `\n${t("subtotal")} : ${formatPrice(subtotal)} ${tCommon("price_unit")}`;
+        message += `\n${t("delivery")} : ${deliveryFee === 0 ? t("free") : formatPrice(deliveryFee) + " " + tCommon("price_unit")}`;
+        message += `\n${t("whatsapp_total", { total: formatPrice(total), unit: tCommon("price_unit") })}`;
 
-        message += "\n\nMerci de m'indiquer la marche à suivre pour le paiement par WhatsApp et la livraison.";
+        message += `\n\n${t("whatsapp_footer")}`;
 
         const encodedMessage = encodeURIComponent(message);
         window.open(`https://wa.me/237699984029?text=${encodedMessage}`, "_blank");
@@ -200,9 +200,10 @@ export function CartDrawer() {
                                     {t("checkout")} (WhatsApp)
                                     <ArrowRight className="ml-2 w-5 h-5" />
                                 </Button>
-                                <p className="text-[10px] text-center text-muted-foreground uppercase tracking-widest leading-relaxed">
-                                    Livraison gratuite à Douala <br /> dès 50,000 FCFA
-                                </p>
+                                <p
+                                    className="text-[10px] text-center text-muted-foreground uppercase tracking-widest leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: t("delivery_note") }}
+                                />
                             </div>
                         )}
                     </div>

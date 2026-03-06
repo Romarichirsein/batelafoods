@@ -1,0 +1,339 @@
+﻿
+> batela-foods@0.1.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.35
+  - Environments: .env.local, .env.production
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/121) ...
+node.exe : 
+Au caractère Ligne:1 
+: 1
++ & "C:\Program Files\
+nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (:String) [   
+ ], RemoteExceptio    
+n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+Error occurred 
+prerendering page "/fr
+/opengraph-image". 
+Read more: https://nex
+tjs.org/docs/messages/
+prerender-error
+
+TypeError: Invalid URL
+    at new URL (node:i
+nternal/url:819:25)
+    at fileURLToPath (
+node:internal/url:1604
+:12)
+    at file:///C:/User
+s/COMPUTER%20STORES/Do
+wnloads/projets%20ia/B
+atela%20Foods/node_mod
+ules/next/dist/compile
+d/@vercel/og/index.nod
+e.js:18988:32
+    at ModuleJob.run (
+node:internal/modules/
+esm/module_job:430:25)
+    at async onImport.
+tracePromise.__proto__
+ (node:internal/module
+s/esm/loader:661:26)
+    at async 
+Object.start 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\app\[locale]\op
+engraph-image\route.js
+:1:3068)
+
+Error occurred 
+prerendering page "/en
+/opengraph-image". 
+Read more: https://nex
+tjs.org/docs/messages/
+prerender-error
+
+TypeError: Invalid URL
+    at new URL (node:i
+nternal/url:819:25)
+    at fileURLToPath (
+node:internal/url:1604
+:12)
+    at file:///C:/User
+s/COMPUTER%20STORES/Do
+wnloads/projets%20ia/B
+atela%20Foods/node_mod
+ules/next/dist/compile
+d/@vercel/og/index.nod
+e.js:18988:32
+    at ModuleJob.run (
+node:internal/modules/
+esm/module_job:430:25)
+    at async onImport.
+tracePromise.__proto__
+ (node:internal/module
+s/esm/loader:661:26)
+    at async 
+Object.start 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\app\[locale]\op
+engraph-image\route.js
+:1:3068)
+
+The `locale` 
+parameter in 
+`getRequestConfig` is 
+deprecated, please 
+switch to `await 
+requestLocale`. See ht
+tps://next-intl.dev/bl
+og/next-intl-3-22#awai
+t-request-locale
+
+
+The `locale` 
+parameter in 
+`getRequestConfig` is 
+deprecated, please 
+switch to `await 
+requestLocale`. See ht
+tps://next-intl.dev/bl
+og/next-intl-3-22#awai
+t-request-locale
+
+
+The `locale` 
+parameter in 
+`getRequestConfig` is 
+deprecated, please 
+switch to `await 
+requestLocale`. See ht
+tps://next-intl.dev/bl
+og/next-intl-3-22#awai
+t-request-locale
+
+ Ô¿» 
+useSearchParams() 
+should be wrapped in 
+a suspense boundary 
+at page 
+"/[locale]/contact". 
+Read more: https://nex
+tjs.org/docs/messages/
+missing-suspense-with-
+csr-bailout
+    at o 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\chunks\9049.js:
+1:10502)
+    at d 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\chunks\9049.js:
+1:21394)
+    at t4 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\app\[locale]\co
+ntact\page.js:1:72079)
+    at nj 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+46252)
+    at nM 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+47572)
+    at nM 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+61547)
+    at nL 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+64547)
+    at nB 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+67539)
+    at nD 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+66681)
+    at nL 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+64854)
+
+Error occurred 
+prerendering page 
+"/en/contact". Read 
+more: https://nextjs.o
+rg/docs/messages/prere
+nder-error
+
+ Ô¿» 
+useSearchParams() 
+should be wrapped in 
+a suspense boundary 
+at page 
+"/[locale]/contact". 
+Read more: https://nex
+tjs.org/docs/messages/
+missing-suspense-with-
+csr-bailout
+    at o 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\chunks\9049.js:
+1:10502)
+    at d 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\chunks\9049.js:
+1:21394)
+    at t4 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\.next\
+server\app\[locale]\co
+ntact\page.js:1:72079)
+    at nj 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+46252)
+    at nM 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+47572)
+    at nM 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+61547)
+    at nL 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+64547)
+    at nB 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+67539)
+    at nD 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+66681)
+    at nL 
+(C:\Users\COMPUTER STO
+RES\Downloads\projets 
+ia\Batela Foods\node_m
+odules\next\dist\compi
+led\next-server\app-pa
+ge.runtime.prod.js:12:
+64854)
+
+Error occurred 
+prerendering page 
+"/fr/contact". Read 
+more: https://nextjs.o
+rg/docs/messages/prere
+nder-error
+
+   Generating static pages (30/121) 
+   Generating static pages (60/121) 
+   Generating static pages (90/121) 
+ Ô£ô Generating static pages (121/121)
+
+> Export encountered 
+errors on following 
+paths:
+	/[locale]/contact/pag
+e: /en/contact
+	/[locale]/contact/pag
+e: /fr/contact
+	/[locale]/opengraph-i
+mage/route: 
+/en/opengraph-image
+	/[locale]/opengraph-i
+mage/route: 
+/fr/opengraph-image

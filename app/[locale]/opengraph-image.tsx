@@ -1,5 +1,7 @@
 import { ImageResponse } from 'next/og';
 
+export const runtime = 'edge';
+
 export function generateStaticParams() {
     return [{ locale: 'fr' }, { locale: 'en' }];
 }
