@@ -40,7 +40,7 @@ export async function NewsTeaser({ locale }: { locale: string }) {
                     {featuredPosts.length > 0 ? (
                         featuredPosts.map((post: any) => (
                             <Link key={post._id} href={`/news/${post.slug.current}`} className="group">
-                                <article className="bg-muted/30 rounded-[32px] p-8 border border-border hover:border-neon-red/30 transition-all duration-500 h-full flex flex-col relative overflow-hidden">
+                                <article className="card-glass hover:shadow-glass-lg transition-shadow duration-300 p-8 border border-border relative overflow-hidden h-full flex flex-col">
                                     <div className="flex items-center gap-3 mb-6 relative z-10">
                                         <span className="px-3 py-1 rounded-full bg-neon-red/10 text-neon-red text-[10px] font-black uppercase tracking-widest">
                                             {t("badge")}

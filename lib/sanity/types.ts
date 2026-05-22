@@ -24,6 +24,7 @@ export interface Product {
     slug: { current: string };
     price: number;
     image: SanityImageAsset;
+    images?: SanityImageAsset[];
     category: "animal" | "plant";
     subcategory?: string;
     ingredients?: LocalizedStringArray;

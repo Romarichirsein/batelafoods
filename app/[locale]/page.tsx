@@ -27,24 +27,33 @@ async function ProductGridFallback() {
 }
 
 import { unstable_setRequestLocale } from "next-intl/server";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
     unstable_setRequestLocale(locale);
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-mesh">
             <Hero />
-            <About />
+            
+            <AnimatedSection>
+                <About />
+            </AnimatedSection>
+            
             <DeliveryStrip locale={locale} />
 
-            <section id="shop">
+            <AnimatedSection id="shop">
                 <Suspense fallback={<ProductGridFallback />}>
                     <ProductGrid locale={locale} />
                 </Suspense>
-            </section>
+            </AnimatedSection>
 
-            <NewsTeaser locale={locale} />
+            <AnimatedSection>
+                <NewsTeaser locale={locale} />
+            </AnimatedSection>
 
-            <WholesaleTeaser locale={locale} />
+            <AnimatedSection>
+                <WholesaleTeaser locale={locale} />
+            </AnimatedSection>
         </main>
     );
 }

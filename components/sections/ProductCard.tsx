@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { useCart } from "@/store/useCart";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import ImageCarousel from "./ImageCarousel";
 
 interface ProductCardProps {
     product: Product;
@@ -36,22 +37,14 @@ export function ProductCard({ product }: ProductCardProps) {
     };
 
     return (
-        <article className="card-neon group overflow-hidden flex flex-col">
+        <article className="card-neon group overflow-hidden flex flex-col bg-white/5 backdrop-blur-lg border border-neon-green/30 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
             {/* Product image */}
             <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                {imageUrl ? (
-                    <Image
-                        src={imageUrl}
-                        alt={productName}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                ) : (
-                    <div className="absolute inset-0 flex items-center justify-center bg-white">
-                        <Image src="/logo.png" alt="Batela Foods" fill className="object-contain opacity-30 p-8" />
-                    </div>
-                )}
+                <ImageCarousel
+                    images={product.images}
+                    productName={productName}
+                    fallbackImage={imageUrl}
+                />
                 {/* Category badge */}
                 <div className="absolute top-4 left-4">
                     <Badge
