@@ -10,6 +10,7 @@ export async function getFeaturedProducts(): Promise<Product[]> {
     slug,
     price,
     image,
+    images,
     category,
     subcategory,
     featured
@@ -26,6 +27,7 @@ export async function getProductBySlug(slug: string): Promise<Product | null> {
     slug,
     price,
     image,
+    images,
     category,
     subcategory,
     ingredients,
@@ -48,6 +50,7 @@ export async function getRelatedProducts(
     slug,
     price,
     image,
+    images,
     category,
     subcategory,
     featured
@@ -64,6 +67,7 @@ export async function getAllProducts(): Promise<Product[]> {
     slug,
     price,
     image,
+    images,
     category,
     subcategory,
     featured
