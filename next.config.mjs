@@ -4,18 +4,15 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "standalone",
+    output: "export",
     trailingSlash: true,
-    optimizeFonts: false,
     images: {
         unoptimized: true,
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "cdn.sanity.io",
-            },
-        ],
     },
 };
 
+
+
 export default withNextIntl(nextConfig);
+
+

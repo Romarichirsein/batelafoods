@@ -6,7 +6,7 @@ import { Link } from "@/i18n/routing";
 import { ArrowLeft, Clock } from "lucide-react";
 
 // Required setup to render Sanity Rich Text Content
-import { PortableText } from "next-sanity";
+import { PortableText } from "@portabletext/react";
 import { getAllPostSlugs } from "@/lib/sanity/queries";
 import { unstable_setRequestLocale } from "next-intl/server";
 

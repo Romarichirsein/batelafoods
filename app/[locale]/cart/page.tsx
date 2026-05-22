@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, ArrowLeft, Package, Truck, Shield } from "lucide-react";
 
-export const dynamic = "force-static";
+
 
 export default function CartPage() {
     const { items, removeItem, updateQuantity, getTotalPrice, getTotalItems } = useCart();

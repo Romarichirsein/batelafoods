@@ -41,13 +41,22 @@ export const productSchema = defineType({
             initialValue: false,
         }),
 
-        // Image
+        // Deprecated single image (keep for backward compatibility)
         defineField({
             name: "image",
-            title: "Image du produit",
+            title: "Image du produit (déprécié)",
             type: "image",
             options: { hotspot: true },
             validation: (r) => r.required(),
+            hidden: true,
+        }),
+        // New array of images for gallery support
+        defineField({
+            name: "images",
+            title: "Galerie d'images",
+            type: "array",
+            of: [{ type: "image", options: { hotspot: true } }],
+            description: "Ajoutez plusieurs images pour créer un carrousel de produit",
         }),
 
         // Category

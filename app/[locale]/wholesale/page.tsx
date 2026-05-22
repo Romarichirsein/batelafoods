@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Package, Truck, Star, Users, Building2, ChefHat, ShoppingBag, TrendingDown, Phone, Mail, MessageCircle } from "lucide-react";
 
-export const dynamic = "force-static";
+
 
 export default function WholesalePage() {
     const tiers = [
