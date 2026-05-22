@@ -48,6 +48,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
             title: "Batela Foods — Saveurs du Cameroun",
             creator: "@batelafoods",
         },
+        icons: {
+            icon: "/logo.png",
+            apple: "/logo.png",
+        },
     };
 }
 
