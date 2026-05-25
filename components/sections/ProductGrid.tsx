@@ -28,9 +28,6 @@ export async function ProductGrid({ locale, category }: { locale: string, catego
                 if (lowCat === 'viandes-fumees' || lowCat === 'viandes_fumees') {
                     return pSub.includes('fumé') || pName.includes('fumé') || pCat.includes('fumé') || pCat === 'viandes_fumees';
                 }
-                if (lowCat === 'vegetal' || lowCat === 'végétal') {
-                    return pCat === 'vegetal' || pSub === 'vegetal' || pCat === 'végétal' || pSub === 'végétal';
-                }
 
                 // Default fallback
                 return pCat === lowCat || pSub === lowCat || pCat.replace(/-/g, '_') === lowCat.replace(/-/g, '_');

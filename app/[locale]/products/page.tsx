@@ -14,8 +14,7 @@ export default function ProductsPage({ params: { locale } }: { params: { locale:
     const categories = [
         { id: 'saucissons', icon: '🥩' },
         { id: 'saucisses', icon: '🌭' },
-        { id: 'viandes_fumees', icon: '🔥', slug: 'viandes-fumees' },
-        { id: 'vegetal', icon: '🌱' }
+        { id: 'viandes_fumees', icon: '🔥', slug: 'viandes-fumees' }
     ];
 
     return (
